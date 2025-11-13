@@ -1,0 +1,129 @@
+.program-section {
+    background: #0f0c29;
+    color: white;
+    padding: 80px 0;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.program-title {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.program-subtitle {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    font-size: 1.2rem;
+    opacity: 0.8;
+    margin-bottom: 60px;
+}
+.modules-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+.moule-card {
+    background: rgba(255,255,255,0.05);
+    border-radius: 15px;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+.module-header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.module-badge {
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.module-title {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.8rem;
+    margin: 15px 0 10px;
+}
+.module-duration {
+    font-family: "Roboto", sans-serif;
+    opacity: 0.7;
+    font-size: 0.9rem;
+}
+.lessons-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.lesson-item {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    padding: 20px;
+    background: rgba(255,255,255,0.03);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.lesson-item:hover {
+    background: rgba(255,255,255,0.08);
+    transform: translateX(5px);
+}
+.lesson-number {
+    background: rgba(102, 126, 234, 0.2);
+    color: #667eea;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+.lesson-content h3 {
+    margin: 0 0 8px 0;
+    font-size: 1.1rem;
+}
+.lesson-content p {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    opacity: 0.8;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+.highlight-lesson {
+    border: 2px solid #667eea;
+    position: relative;
+}
+.upsell-badge {
+    margin-top: 10px;
+}
+.upsell-badge span {
+    font-family: "Roboto", sans-serif;
+    background: #ff6b6b;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+@media (max-width: 768px) {
+    .modules-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .program-title {
+        font-family: "Roboto", sans-serif;
+        font-size: 2.2rem;
+    }
+}

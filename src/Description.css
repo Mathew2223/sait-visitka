@@ -1,0 +1,136 @@
+@import url("constants/constants.scss");
+.hero-section {
+  background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+  color: white;
+  padding: 80px 0;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.text-block {
+  padding-right: 40px;
+}
+
+.hero-title {
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  leading-trim: NONE;
+  letter-spacing: 1px;
+}
+
+.hero-subtitle {
+  opacity: 0.9;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  leading-trim: NONE;
+  letter-spacing: 1px;
+}
+
+.form-block {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  leading-trim: NONE;
+  letter-spacing: 1px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  color: #555;
+  font-weight: 500;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #e1e5e9;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.cta-button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+.cta-button.primary {
+  background: #ff6b6b;
+  color: white;
+}
+
+.cta-button.primary:hover {
+  background: #ff5252;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 107, 107, 0.3);
+}
+
+.cta-button.secondary {
+  background: #667eea;
+  color: white;
+}
+
+.cta-button.secondary:hover {
+  background: #5a6fd8;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .text-block {
+    padding-right: 0;
+    text-align: center;
+  }
+  .hero-title {
+    font-size: 2.2rem;
+  }
+}/*# sourceMappingURL=Description.css.map */

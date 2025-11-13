@@ -1,0 +1,119 @@
+.reviews-section {
+    background: #1a1a2e;
+    color: white;
+    padding: 80px 0;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.review-card {
+    background: rgba(255,255,255,0.05);
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.reviewer-info h4 {
+    margin: 0 0 5px 0;
+    font-size: 1.2rem;
+}
+
+.reviewer-info span {
+    opacity: 0.7;
+    font-size: 0.9rem;
+}
+
+.review-project {
+    background: rgba(102,126,234,0.2);
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+.review-text {
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* Стили для Footer */
+.footer {
+    background: #000;
+    color: white;
+    padding: 50px 0 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.footer-info p {
+    opacity: 0.8;
+}
+
+.footer-contacts h4 {
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #667eea;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+    .pricing-cards,
+    .reviews-grid,
+    .payment-options,
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .price-card.popular {
+        transform: none;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+}
