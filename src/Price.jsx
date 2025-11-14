@@ -10,7 +10,7 @@ export default function Price() {
                         <div className="price-header">
                             <h3>Половина курса</h3>
                             <div className="price-amount">
-                                <span className="amount">10 000 ₽</span>
+                                <span className="amount">7 000 ₽</span>
                                 <span className="period">за 5 занятий</span>
                             </div>
                         </div>
@@ -28,7 +28,7 @@ export default function Price() {
                         <div className="price-header">
                             <h3>Полный курс</h3>
                             <div className="price-amount">
-                                <span className="amount">15 000 ₽</span>
+                                <span className="amount">9999 ₽</span>
                                 <span className="period">за 10 занятий</span>
                             </div>
                         </div>
