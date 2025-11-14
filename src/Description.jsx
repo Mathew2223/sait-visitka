@@ -10,7 +10,7 @@ export default function Description() {
                     <button className='cta-button primary'>Изучить программу курса</button>
                 </div>
                 <div className="form-block">
-                    <form id='enrollment-form' className='enrollment-form' action="/submit-form" method='post'>
+                    <form id='enrollment-form' className='enrollment-form'> {/* action="/submit-form" method='post' */}
                         <h2 className='form-title'>Запись на курс</h2>
                         <div className='input-group'>
                             <label htmlFor="username">Имя</label>
