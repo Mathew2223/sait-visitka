@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import './Header.css';
 import logo from './assets/logo_header.png';
-import videoFile from './assets/rolik.mp4';
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
