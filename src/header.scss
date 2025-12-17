@@ -146,16 +146,3 @@
         display: none;
     }
 }
-
-@media (max-width: 480px) {
-    .container {
-        padding: 0 15px;
-    }
-    .nav-links {
-        width: 100%;
-        right: -100%;
-    }
-    .nav-links--active {
-        right: 0;
-    }
-}

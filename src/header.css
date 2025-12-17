@@ -1,6 +1,5 @@
 .header {
   background: #0f0c29;
-  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -107,6 +106,56 @@
   z-index: 998;
 }
 
+.video-section {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  padding: 80px 0;
+  color: white;
+}
+
+.video-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.promo-video {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.autoplay-video {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 768px) {
+  .video-section {
+      padding: 50px 0;
+  }
+  
+  .promo-video,
+  .autoplay-video {
+      border-radius: 10px;
+  }
+}
+
 @media (max-width: 768px) {
   .header {
     height: 60px;
@@ -158,17 +207,5 @@
   }
   .nav-links:not(.nav-links--active) {
     display: none;
-  }
-}
-@media (max-width: 480px) {
-  .container {
-    padding: 0 15px;
-  }
-  .nav-links {
-    width: 100%;
-    right: -100%;
-  }
-  .nav-links--active {
-    right: 0;
   }
 }/*# sourceMappingURL=header.css.map */
