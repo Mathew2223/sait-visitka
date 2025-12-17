@@ -31,21 +31,6 @@ export default function Header() {
                     {isMenuOpen && <div className="overlay" onClick={() => setIsMenuOpen(false)}></div>}
                 </div>
             </div>
-            <section id="video" className="video-section">
-            <div className="container">
-                <h2 className="section-title">Посмотри, как это работает</h2>
-                <div className="video-wrapper">
-                    <video 
-                        className="promo-video"
-                        controls
-                        preload="metadata"
-                    >
-                        <source src={videoFile} type="video/mp4" />
-                        Ваш браузер не поддерживает видео.
-                    </video>
-                </div>
-            </div>
-        </section>
         </header>
     )
 }
